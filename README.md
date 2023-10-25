@@ -5,7 +5,7 @@
 
 ## Link to Design Process Overview
 wiki link: 
-https://github.com/UQdeco3500/template/wiki/Design_Process
+ https://github.com/UQdeco3500/ATONIA/wiki/Design-Process-Overview
 
 ## Link To Project Proposal
 
