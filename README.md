@@ -17,5 +17,6 @@ https://github.com/UQdeco3500/ATONIA/wiki/Proposal
 ## Link to Working Prototype, Promotional Material, and Documentation
 
 Figma: https://www.figma.com/file/1XiNG8NtvyOCVESspgLktn/DECO3500?type=design&node-id=0-1&mode=design&t=OQ5Ny6biHNP7vCMb-0
+Brochure: https://github.com/UQdeco3500/ATONIA/blob/master/promotional%20material/Brochure.pdf
 
 link to relevant links for prototype, promotional material & documentation
