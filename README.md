@@ -21,3 +21,6 @@ Figma: https://www.figma.com/file/1XiNG8NtvyOCVESspgLktn/DECO3500?type=design&no
 Brochure: https://github.com/UQdeco3500/ATONIA/blob/master/promotional%20material/Brochure.pdf
 
 link to relevant links for prototype, promotional material & documentation
+
+**Instruction Video**: 
+[[Smart Light Strip]](https://youtu.be/3Oi0JVJNOnM "Smart Light Strip")
