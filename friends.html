@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="friends/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="margin: 0; background: #032443">
+    <input type="hidden" id="anPageName" name="page" value="usage" />
+    <div class="container-center-horizontal">
+      <div class="usage screen">
+        <div class="overlap-group4">
+          <div class="main-container" id="container">
+          
+          <div class="upper-section">
+            <div class="friends body-1semibold">Friends</div>
+            <div class="number-box">
+              <div class="number body-3semibold" id="number">2</div>
+            </div>
+          </div>
+
+          <!-- list-1 -->
+            <div class="sleepButton" id="sleepButton" style="z-index: 999;">
+              <div class="circle">
+                <div class="friend">
+                  <img class="person" src="friends/img/person@2x.png" alt="Person" />
+                </div>
+              </div>
+              <div class="remind-container">
+                <img
+                  class="do-not-disturb-1"
+                  id="sleep-image"
+                  src="friends/img/do-not-disturb-1@2x.png"
+                  alt="do-not-disturb 1"
+                />
+              </div>
+              <div class="content">
+                <h3 class="name body-2semibold">Ella</h3>
+                <div class="addtional-info caption-1regular">
+                  <h4 class="address">8 Unit</h4>
+                  <h4 class="address">12 Jam</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="sleepButton" id="remindButton">
+              <div class="circle">
+                <div class="friend">
+                  <img class="person" src="friends/img/person@2x.png" alt="Person" />
+                </div>
+              </div>
+              <div class="remind-container-2">
+                <img
+                  class="do-not-disturb-1"
+                  src="friends/img/Hotel Bed.png"
+                  alt="do-not-disturb 1"
+                />
+              </div>
+
+              <!-- list-2 -->
+              <div class="content">
+                <h3 class="name body-2semibold">Jonson</h3>
+                <div class="addtional-info caption-1regular">
+                  <h4 class="address">8 Unit</h4>
+                  <h4 class="address">12 Jam</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="back-section">
+            <a href="/index.html">
+              <img
+                class="fi-ss-angle-small-left"
+                src="friends/img/fi-ss-angle-small-left.svg"
+                alt="fi-ss-angle-small-left"
+              />
+            </a>
+            <h1 class="title">Friends</h1>
+          </div>
+          <div class="system-dark-home-indicator">
+            <div class="home-indicator"></div>
+          </div>
+          <div class="eos_person_add_filled" id="addButton">
+            <div class="overlap-group1">
+              <button class="add-button">
+                <img class="vector" src="friends/img/vector.svg" alt="Vector" />
+              </button>
+            </div>
+          </div>
+          <img class="notocloud" src="friends/img/noto-cloud.svg" alt="noto:cloud" />
+          <div class="overlap-group3">
+              <div class="overlap-group">
+                <div class="menu-1">
+                  <div class="overlap-group-2">
+                    <img class="union" src="friends/img/union.svg" alt="Union" />
+                    <div class="frame-1991">
+                      <div class="navigationmenu">
+                        <a href="/index.html">
+                          <div class="navigationmenu-home-1">
+                          <img class="home" src="friends/img/home.svg" alt="home" />
+                          <div class="place">Home</div>
+                        </div>
+                        </a>
+                        <div class="navigationmenu-home"></div>
+                      </div>
+                      <div class="navigationmenu">
+                        <div class="navigationmenu-home"></div>
+                        <div class="navigationmenu-home">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="light-bulb"
+                  src="friends/img/light-bulb@2x.png"
+                  alt="light bulb"
+                />
+                <div class="ellipse"></div>
+              </div>
+              <a href="/music.html"><img class="vector-1" src="friends/img/vector-1.svg" alt="Vector" /></a>
+            <img class="frame-47" src="friends/img/frame-47.svg" alt="Frame 47" />
+            <a href="/setting.html"><img class="user-1" src="friends/img/user.svg" alt="user" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function alertUser() {
+        alert(
+          "Sorry , the user have active the do not disturb mode, you cannot remind he/she"
+        );
+      }
+
+      function remindFriend() {
+        confirm(
+          "Do you like to send a reminder to your friend to go to sleep?"
+        );
+      }
+
+      //original friends list
+      let friencount = 2;
+      //add new friends
+      function addNewSection() {
+        var container = document.getElementById("container");
+        var section = document.getElementById("remindButton").cloneNode(true);
+
+        // enter name
+        var newName = prompt("Enter a name to find your friend!");
+
+        if (newName !== null) {
+          // confirm name
+          var confirmMessage = "Send " + newName + " a freind request?";
+          var isConfirmed = confirm(confirmMessage);
+          var getfriendMessage = alert(`${newName} is your friend now!`);
+
+          if (isConfirmed) {
+            if (confirmMessage)
+              // add name to new section
+              var nameElement = section.querySelector(".name");
+            if (nameElement) {
+              nameElement.textContent = newName;
+            }
+
+            // add new section
+            container.appendChild(section);
+
+            // add new number
+            var numberElement = document.getElementById("number");
+            if (numberElement) {
+              var currentNumber = parseInt(numberElement.textContent);
+              if (!isNaN(currentNumber)) {
+                numberElement.textContent = (currentNumber + 1).toString();
+              }
+            }
+            section.addEventListener("click", remindFriend);
+          }
+        }
+      }
+
+      let sleepButton = document.getElementById("sleepButton");
+      sleepButton.addEventListener("click", alertUser);
+
+      let remindButton = document.getElementById("remindButton");
+      remindButton.addEventListener("click", remindFriend);
+
+      document.getElementById("addButton").onclick = addNewSection;
+      
+    </script>
+  </body>
+</html>
